@@ -1,7 +1,29 @@
-body{
+---
+---
+/*
+#DC3522
+#D9CB9E
+#374140
+#2A2C2B
+#1E1E20
+*/
+
+$primary:#2A2C2B;
+$secondary:#1E1E20;
+$extra:#374140;
+
+$highlight:#DC3522;
+
+body
+{
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  color:$primary;
+}
+nav,footer{
+  background-color: $highlight;
+  color: $secondary;
 }
 
 nav ul, footer ul{
@@ -17,7 +39,6 @@ nav ul li, footer ul li{
 
 a{
   text-decoration: none;
-  color: #999;
 }
 
 a:hover{
