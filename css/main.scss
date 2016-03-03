@@ -7,11 +7,10 @@
 #2A2C2B
 #1E1E20
 */
-
+$background:#D9CB9E;
 $primary:#2A2C2B;
 $secondary:#1E1E20;
 $extra:#374140;
-
 $highlight:#DC3522;
 
 body
@@ -20,6 +19,7 @@ body
   margin-right: auto;
   width: 70%;
   color:$primary;
+  background-color: $background;
 }
 nav,footer{
   background-color: $highlight;
