@@ -76,6 +76,10 @@ a{
     padding: 1em;
     display: inline-block;
     margin: 5px;
+    border-radius: 10px;
+    &:first-child{
+      margin-left: 0px;
+    }
     h1{
     font-size: x-large;
     }
@@ -84,7 +88,7 @@ a{
       &:hover{
         darken($background, 5)
       }
-      
+
     }
   }
 }
