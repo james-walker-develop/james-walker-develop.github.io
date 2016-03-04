@@ -20,35 +20,44 @@ body{
   color:$primary;
   background-color: $background;
 }
+
 nav,footer{
-  background-color: $highlight;
   color: $secondary;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  color: $secondary;
+
+  ul{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+
+    li{
+      display: inline;
+      margin-right: 0.5em;
+    }
+  }
 }
 
 footer{
-  position: fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
 }
-
-nav ul, footer ul{
-  padding: 0px;
-  list-style: none;
-  font-weight: bold;
-}
-
-nav ul li, footer ul li{
-  display: inline;
-  margin-right: 0.5em;
+nav{
+  top: 0;
 }
 
 a{
   text-decoration: none;
   color: $extra-primary;
-}
+  &:hover{
+    text-decoration: underline;
+    color: darken($extra-primary, 25);
+  }
+  &:visited{
 
-a:hover{
-  text-decoration: underline;
-  color: darken($extra-primary, 25);
+  }
 }
