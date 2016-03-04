@@ -86,7 +86,7 @@ a{
     a{
       color: $background;
       &:hover{
-        darken($background, 5)
+        color:darken($background, 5);
       }
 
     }
