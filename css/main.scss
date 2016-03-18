@@ -13,12 +13,13 @@ $primary:#ECF0F1;
 $secondary: darken($primary,25%);
 $highlight:#E74C3C;
 $extra-primary:#3498DB;
+
 *{
   box-sizing: border-box;
-  font-family: 'Roboto',sans-serif;
 }
 
 body{
+  font-family: 'Roboto',sans-serif;
   margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
@@ -63,8 +64,12 @@ nav{
 a{
   text-decoration: none;
   color: $extra-primary;
+  padding: 5px;
+  transition: ease-out 0.5s;
   &:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: $extra-primary;
     color: darken($extra-primary, 25);
   }
   &:visited{
