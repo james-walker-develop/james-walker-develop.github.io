@@ -1,7 +1,3 @@
 name: James Walker
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-collections:
- games:
-   output:true
-   permalink: /games/:title
