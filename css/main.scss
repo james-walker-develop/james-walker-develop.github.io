@@ -46,6 +46,12 @@ nav,footer{
     li{
       display: inline;
       margin-right: 0.5em;
+      a{
+          padding: 10px;
+          &:hover{
+            border-radius: 25px;
+          }
+      }
     }
   }
 }
@@ -64,11 +70,10 @@ nav{
 a{
   text-decoration: none;
   color: $extra-primary;
-  padding: 5px;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.25s;
   &:hover{
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: $extra-primary;
     color: darken($extra-primary, 25);
   }
