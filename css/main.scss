@@ -14,6 +14,15 @@ $secondary: darken($primary,25%);
 $highlight:#E74C3C;
 $extra-primary:#3498DB;
 
+/* Mixins */
+@mixin boxy {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 1em;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -84,14 +93,10 @@ a{
 
 .grid{
   .item{
+    @include boxy;
     position:relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     background-color: $extra-primary;
     width: 23.333333%;
-    padding: 1em;
-    display: inline-block;
-    margin: 5px;
-    border-radius: 10px;
     &:first-child{
       margin-left: 0px;
     }
@@ -108,12 +113,9 @@ a{
   }
 }
 .btn{
-  display: inline-block;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  @include boxy;
   background-color: $primary;
   color: $background;
-  border-radius: 10px;
-  padding: 1em;
   &:hover{
     background-color: darken($primary,25);
     color: lighten($background, 25);
