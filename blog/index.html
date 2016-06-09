@@ -9,7 +9,7 @@ title: Blog.
       <h1>{{ post.title }}</h1>
       <p>{{ post.date | date_to_string }}</p>
       <p>{{ post.excerpt }}</p>
-      <a href="{{ post.url }}" title= "{{ post.title }}">read more..</a>
+      <a href="{{ post.url }}" title= "{{ post.title }}" class="btn">read more..</a>
     </div>
   {% endfor %}
 </div>
