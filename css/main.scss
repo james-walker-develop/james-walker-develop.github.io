@@ -95,6 +95,7 @@ a{
   .item{
     @include boxy;
     position:relative;
+    background-size: cover;
     background-color: $extra-primary;
     width: 23.333333%;
     &:first-child{
