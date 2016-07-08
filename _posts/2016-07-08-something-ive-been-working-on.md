@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Something I've been working on"
-date: 2016-08-07
+date: 2016-07-07
 bg: "/images/08072016thumb.png"
 ---
 
