@@ -1,10 +1,10 @@
-var test = document.getElementById('glWrapper');
+var wrapper = document.getElementById('glWrapper');
 var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, test.innerWidth / test.innerHeight, 0.1, 1000);
+var camera = new THREE.PerspectiveCamera(75, wrapper.clientWidth/ wrapper.clientHeight, 0.1, 1000);
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize( test.innerWidth,test.innerHeight);
-test.appendChild(renderer.domElement);
+renderer.setSize( wrapper.clientWidth,wrapper.clientHeight);
+wrapper.appendChild(renderer.domElement);
 
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
