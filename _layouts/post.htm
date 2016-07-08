@@ -1,12 +1,8 @@
 ---
 layout: default
 ---
-
 <p class="meta">{{ page.date | date_to_string}}</p>
 
-<div class="post">
-  {{ content }}
-</div>
 <div>
-  <p><a href="{{page.previous}}">Previous page</a> | <a href="{{page.next}}">Next page</a></p>
+  <p><a href="{{post.previous}}">Previous page</a> | <a href="{{post.next}}">Next page</a></p>
 </div>
