@@ -100,8 +100,9 @@ a{
     background-blend-mode: multiply;
     background-color: grey;
     width: 23.333333%;
-    height: 100px;
-    overflow-y: hidden;
+    max-height: 250px;
+    max-width: 250px;
+    overflow: hidden;
     &:first-child{
       margin-left: 0px;
     }
@@ -114,6 +115,11 @@ a{
         color:darken($background, 5);
       }
 
+    }
+    .btn{
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
     }
   }
 }
